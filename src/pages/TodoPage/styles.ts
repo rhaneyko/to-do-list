@@ -21,7 +21,7 @@ export const TodoContainer = styled.div`
 
     padding: 20px;
 
-    background-color: #FCD757;
+    background-color: ${props => props.theme.colors.todoContainer};
 
     transition: box-shadow .3s;
     &:hover {
@@ -48,13 +48,13 @@ export const CreateTodo = styled.input`
     
     border: none;
     border-bottom: 1px solid #000;
-    background-color: #FBDE74;
+    background-color: ${props => props.theme.colors.inputCreateTodo};
 `;
 
 export const CreateButton = styled.button`
     width: 55px;
     height: 55px;
-    background-color: #FBDE74;
+    background-color: ${props => props.theme.colors.createButton};
     border: none;
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -82,6 +82,7 @@ export const Todo = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
     align-items: center;
     
     height: 40px;
@@ -96,16 +97,18 @@ export const TodoText = styled.p`
 
 `;
 
-export const Buttons = styled.div``;
+export const Buttons = styled.div`
+    display: flex;
+`;
 
 export const DeleteButton = styled.button`
-    background-color: #FCD757;
+    background-color: ${props => props.theme.colors.deleteButton};
     border: none;
     margin-right: 10px;
 `;
 
 export const EditButton = styled.button`
-    background-color: #FCD757;
+    background-color: ${props => props.theme.colors.editButton};
     border: none;
     margin-right: 10px;
 `;

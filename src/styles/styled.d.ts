@@ -12,6 +12,12 @@ export interface DefaultTheme{
           buttonText: string,
           borderButton: string,
           cardBackground: string,
+
+          todoContainer: string,
+          inputCreateTodo: string,
+          createButton: string,
+          deleteButton: string,
+          editButton: string,
         }
   }
 }

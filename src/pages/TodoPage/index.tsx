@@ -13,12 +13,10 @@ import {
     TodoText,
     Buttons,
     DeleteButton,
-    EditButton,
     TodoCompleted,
 } from './styles';  
 
-import { AiOutlinePlusCircle, AiOutlineDelete, AiOutlineEdit } from 'react-icons/ai'
-
+import { AiOutlinePlusCircle, AiOutlineDelete } from 'react-icons/ai'
 
 interface TodoProps {
     id: number;
@@ -47,12 +45,13 @@ const TodoPage = () => {
       setTodoTitle('');
     }
 
-    // function completedTodo(id: number){
-    //   const todoComplete = todos.map(todo => 
-    //      todo.id === id ? {...todo, completed: !todo.completed} : todo
-    //     )
-    //   setTodos(todoComplete);
-    // }
+     function completedTodo(id: number){
+       const todoComplete = todos.map(todo => 
+          todo.id === id ? {...todo, completed: !todo.completed} : todo
+         )
+       setTodos(todoComplete);
+     }
+
 
     function deleteTodo(id: number){
       const todoDelete = todos.filter(todo => todo.id !== id);
@@ -107,7 +106,18 @@ const TodoPage = () => {
                 key={todo.id}
               >
                 <Todo>
-                  <TodoText>{todo.title}</TodoText>
+                  <input
+                    type='checkbox'
+                    checked={todo.completed}
+                    onChange={() => completedTodo(todo.id)}
+                  />
+                  
+                  <TodoText
+                    style={{textDecoration: todo.completed ? 'line-through' : 'none',
+                    textAlign: 'left'
+                    
+                  }}
+                  >{todo.title}</TodoText>
                 <Buttons>
                 <DeleteButton
                   onClick={() => deleteTodo(todo.id)}
@@ -116,12 +126,6 @@ const TodoPage = () => {
                   size={25}
                  />
                 </DeleteButton>
-                <EditButton
-                >
-                  <AiOutlineEdit 
-                  size={25}
-                  />
-                </EditButton>
                 </Buttons>
                 </Todo>
               </TodosList>
