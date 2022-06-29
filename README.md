@@ -5,9 +5,9 @@
 
 ## 🎨 Layout
 
-![image](https://github.com/rhaneyko/todolist/blob/main/src/assets/images/ToDoScreenshot.jpg)
+![image](https://github.com/rhaneyko/to-do-list/blob/main/src/assets/images/ToDoScreenshot.jpg)
 
-![image](https://github.com/rhaneyko/todolist/blob/main/src/assets/images/ToDoScreensho1.jpg)
+![image](https://github.com/rhaneyko/to-do-list/blob/main/src/assets/images/ToDoScreensho1.jpg)
 
 
 ## Tecnologias
