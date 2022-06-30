@@ -103,28 +103,23 @@ const TodoPage = () => {
           todos.map(todo => {
             return (
               <TodosList
-                key={todo.id}
-              >
+                key={todo.id}>
                 <Todo>
                   <input
                     type='checkbox'
                     checked={todo.completed}
                     onChange={() => completedTodo(todo.id)}
                   />
-                  
                   <TodoText
                     style={{textDecoration: todo.completed ? 'line-through' : 'none',
                     textAlign: 'left'
-                    
                   }}
                   >{todo.title}</TodoText>
                 <Buttons>
                 <DeleteButton
-                  onClick={() => deleteTodo(todo.id)}
-                >
+                  onClick={() => deleteTodo(todo.id)}>
                  <AiOutlineDelete 
-                  size={25}
-                 />
+                  size={25}/>
                 </DeleteButton>
                 </Buttons>
                 </Todo>
