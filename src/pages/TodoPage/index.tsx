@@ -40,7 +40,6 @@ const TodoPage = () => {
         title: todoTitle,
         completed: false,
       }
-
       setTodos( todos => [...todos, newTodo]);
       setTodoTitle('');
     }
