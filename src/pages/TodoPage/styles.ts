@@ -23,6 +23,7 @@ export const TodoContainer = styled.div`
     background-color: ${props => props.theme.colors.todoContainer};
 
     transition: box-shadow .3s;
+
     &:hover {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
@@ -58,16 +59,6 @@ export const CreateButton = styled.button`
 `;
 
 export const Todos = styled.div`
-   overflow-y: scroll;
-
-&::-webkit-scrollbar {
- width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
- background-color: #F0F0F0;
- border-radius: 5px;
-}
 
 `;
 
@@ -80,6 +71,9 @@ export const TodoCompleted = styled.div`
 export const TodosList = styled.div`
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+
 
     width: 700px;
 `;
