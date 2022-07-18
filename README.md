@@ -5,9 +5,9 @@
 
 ## 🎨 Layout
 
-![image](https://github.com/rhaneyko/to-do-list/blob/main/src/assets/images/ToDoScreenshot.jpg)
+![image](https://firebasestorage.googleapis.com/v0/b/todolist-b2715.appspot.com/o/todoScreenshot.jpg?alt=media&token=908f549b-1c09-4b82-a036-3b89e9c0ad7e)
 
-![image](https://github.com/rhaneyko/to-do-list/blob/main/src/assets/images/ToDoScreensho1.jpg)
+![image](https://firebasestorage.googleapis.com/v0/b/todolist-b2715.appspot.com/o/todoScreenshot2.jpg?alt=media&token=53701b4a-92d0-44ee-9614-a8539e5ada4c)
 
 
 ## Tecnologias
