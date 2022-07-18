@@ -24,6 +24,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Esse projeto foi elaborado para web e mobile.
 Para acessar basta clicar no link abaixo:
 
+https://todolistlivesite.netlify.app/
+
 ## Licença
 
 Este projeto esta sobe a licença MIT.
