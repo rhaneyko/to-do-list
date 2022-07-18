@@ -27,6 +27,18 @@ export const TodoContainer = styled.div`
     &:hover {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
+
+    overflow-y: scroll;
+
+&::-webkit-scrollbar {
+ width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: #F0F0F0;
+ border-radius: 5px;
+}
+
 `;
 
 export const Title = styled.h1``;
@@ -73,9 +85,6 @@ export const TodosList = styled.div`
     flex-direction: column;
 
     align-items: center;
-
-
-    width: 700px;
 `;
 
 export const Todo = styled.div`
@@ -86,7 +95,7 @@ export const Todo = styled.div`
     align-items: center;
     
     height: 40px;
-    width: 650px;
+    width: 600px;
     
     margin-top: 5px;
     padding: 10px;
@@ -95,9 +104,7 @@ export const Todo = styled.div`
     
 `;
 
-export const TodoText = styled.p`
-
-`;
+export const TodoText = styled.p``;
 
 export const Buttons = styled.div`
     display: flex;
