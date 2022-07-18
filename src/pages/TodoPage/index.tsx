@@ -13,10 +13,15 @@ import {
   TodoText,
   Buttons,
   DeleteButton,
+  EditButton,
   TodoCompleted,
 } from "./styles";
 
-import { AiOutlinePlusCircle, AiOutlineDelete } from "react-icons/ai";
+import {
+  AiOutlinePlusCircle,
+  AiOutlineDelete,
+  AiOutlineEdit,
+} from "react-icons/ai";
 
 interface TodoProps {
   id: number;
@@ -56,6 +61,8 @@ const TodoPage = () => {
 
     setTodos(todoDelete);
   }
+
+  function editTodo(id: number, title: string) {}
 
   return (
     <Container>
@@ -118,6 +125,9 @@ const TodoPage = () => {
                       <DeleteButton onClick={() => deleteTodo(todo.id)}>
                         <AiOutlineDelete size={25} />
                       </DeleteButton>
+                      <EditButton onClick={() => editTodo(todo.id, todo.title)}>
+                        <AiOutlineEdit size={25} />
+                      </EditButton>
                     </Buttons>
                   </Todo>
                 </TodosList>
