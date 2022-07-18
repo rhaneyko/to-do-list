@@ -7,7 +7,6 @@ import {
   Create,
   CreateTodo,
   CreateButton,
-  Todos,
   TodosList,
   Todo,
   TodoText,
@@ -73,16 +72,16 @@ const TodoPage = () => {
           </CreateButton>
         </Create>
 
-        <Todos>
-          <TodoCompleted>
-            <strong>
-              Completed
-              <span style={{ margin: 5 }}>
-                {todos.filter((todo) => todo.completed).length} of {""}
-                {todos.length}
-              </span>
-            </strong>
-          </TodoCompleted>
+        <TodoCompleted>
+          <strong>
+            Completed
+            <span style={{ margin: 5 }}>
+              {todos.filter((todo) => todo.completed).length} of {""}
+              {todos.length}
+            </span>
+          </strong>
+        </TodoCompleted>
+        <TodosList>
           {!todos.length ? (
             <div
               style={{
@@ -97,33 +96,29 @@ const TodoPage = () => {
           ) : (
             todos.map((todo) => {
               return (
-                <TodosList key={todo.id}>
-                  <Todo>
-                    <input
-                      type="checkbox"
-                      checked={todo.completed}
-                      onChange={() => completedTodo(todo.id)}
-                    />
-                    <TodoText
-                      style={{
-                        textDecoration: todo.completed
-                          ? "line-through"
-                          : "none",
-                      }}
-                    >
-                      {todo.title}
-                    </TodoText>
-                    <Buttons>
-                      <DeleteButton onClick={() => deleteTodo(todo.id)}>
-                        <AiOutlineDelete size={25} />
-                      </DeleteButton>
-                    </Buttons>
-                  </Todo>
-                </TodosList>
+                <Todo key={todo.id}>
+                  <input
+                    type="checkbox"
+                    checked={todo.completed}
+                    onChange={() => completedTodo(todo.id)}
+                  />
+                  <TodoText
+                    style={{
+                      textDecoration: todo.completed ? "line-through" : "none",
+                    }}
+                  >
+                    {todo.title}
+                  </TodoText>
+                  <Buttons>
+                    <DeleteButton onClick={() => deleteTodo(todo.id)}>
+                      <AiOutlineDelete size={25} />
+                    </DeleteButton>
+                  </Buttons>
+                </Todo>
               );
             })
           )}
-        </Todos>
+        </TodosList>
       </TodoContainer>
     </Container>
   );

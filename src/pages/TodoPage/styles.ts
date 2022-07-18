@@ -28,20 +28,11 @@ export const TodoContainer = styled.div`
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
 
-    overflow-y: scroll;
-
-&::-webkit-scrollbar {
- width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
- background-color: #F0F0F0;
- border-radius: 5px;
-}
-
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+     margin: 10px;
+`;
 
 export const Create = styled.form`
     display: flex;
@@ -70,10 +61,6 @@ export const CreateButton = styled.button`
     border-bottom: 1px solid #000;
 `;
 
-export const Todos = styled.div`
-
-`;
-
 export const TodoCompleted = styled.div`
     display: flex;
     justify-content: center;
@@ -85,6 +72,19 @@ export const TodosList = styled.div`
     flex-direction: column;
 
     align-items: center;
+
+    width: 700px;
+
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+     width: 7px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+     background-color: #F0F0F0;
+     border-radius: 5px;
+    }
 `;
 
 export const Todo = styled.div`
