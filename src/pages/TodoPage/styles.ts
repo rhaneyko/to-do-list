@@ -16,10 +16,9 @@ export const TodoContainer = styled.div`
     align-items: center;
 
     width: 700px;
-    height: auto;
-    
+    height: 750px;
 
-    padding: 20px;
+    padding: 20px 0 40px 0;
 
     background-color: ${props => props.theme.colors.todoContainer};
 
@@ -37,13 +36,13 @@ export const Create = styled.form`
     align-items: center;
     justify-content: center;
 `;
+
 export const CreateTodo = styled.input`
     width: 450px;
     height: 55px;
 
     padding-left: 20px;
 
-    
     border: none;
     border-bottom: 1px solid #000;
     background-color: ${props => props.theme.colors.inputCreateTodo};
@@ -59,6 +58,17 @@ export const CreateButton = styled.button`
 `;
 
 export const Todos = styled.div`
+   overflow-y: scroll;
+
+&::-webkit-scrollbar {
+ width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: #F0F0F0;
+ border-radius: 5px;
+}
+
 `;
 
 export const TodoCompleted = styled.div`
@@ -70,10 +80,8 @@ export const TodoCompleted = styled.div`
 export const TodosList = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
-    width: 540px;
-    
+    width: 700px;
 `;
 
 export const Todo = styled.div`
@@ -84,11 +92,13 @@ export const Todo = styled.div`
     align-items: center;
     
     height: 40px;
+    width: 650px;
     
     margin-top: 5px;
     padding: 10px;
 
     border: 1px solid #000;
+    
 `;
 
 export const TodoText = styled.p`
