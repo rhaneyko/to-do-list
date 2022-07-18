@@ -83,7 +83,6 @@ const TodoPage = () => {
               </span>
             </strong>
           </TodoCompleted>
-
           {!todos.length ? (
             <div
               style={{
