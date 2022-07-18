@@ -5,9 +5,9 @@
 
 ## 🎨 Layout
 
-![image](https://firebasestorage.googleapis.com/v0/b/todolist-b2715.appspot.com/o/todoScreenshot.jpg?alt=media&token=908f549b-1c09-4b82-a036-3b89e9c0ad7e)
+![image](https://firebasestorage.googleapis.com/v0/b/todolist-b2715.appspot.com/o/toDoScreenshot1.jpg?alt=media&token=01225d41-4337-4bd8-9f1e-4c1b13e479e1)
 
-![image](https://firebasestorage.googleapis.com/v0/b/todolist-b2715.appspot.com/o/todoScreenshot2.jpg?alt=media&token=53701b4a-92d0-44ee-9614-a8539e5ada4c)
+![image](https://firebasestorage.googleapis.com/v0/b/todolist-b2715.appspot.com/o/todoScreenshot2.jpg?alt=media&token=2cf49427-4d53-44da-821b-a6e54dfe8acf)
 
 
 ## Tecnologias
