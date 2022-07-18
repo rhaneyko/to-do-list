@@ -16,7 +16,7 @@ export const TodoContainer = styled.div`
     align-items: center;
 
     width: 700px;
-    height: 750px;
+    height: 800px;
 
     padding: 20px 0 40px 0;
 
@@ -104,7 +104,11 @@ export const Todo = styled.div`
     
 `;
 
-export const TodoText = styled.p``;
+export const TodoText = styled.p`
+    font-size: 20px;
+    font-weight: bold;
+    
+`;
 
 export const Buttons = styled.div`
     display: flex;
@@ -112,12 +116,6 @@ export const Buttons = styled.div`
 
 export const DeleteButton = styled.button`
     background-color: ${props => props.theme.colors.deleteButton};
-    border: none;
-    margin-right: 10px;
-`;
-
-export const EditButton = styled.button`
-    background-color: ${props => props.theme.colors.editButton};
     border: none;
     margin-right: 10px;
 `;
