@@ -4,10 +4,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
-
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    height: 100vh;
 `;
 
 export const TodoContainer = styled.div`
@@ -19,9 +19,7 @@ export const TodoContainer = styled.div`
     max-width: 100%;
     height: 800px;
 
-    overflow: hidden;
-
-    padding: 40px;
+    padding: 20px 0 40px 0;
 
     background-color: ${props => props.theme.colors.todoContainer};
 
@@ -34,7 +32,7 @@ export const TodoContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-    margin: 10px;
+     margin: 10px;
 `;
 
 export const Create = styled.form`
@@ -42,10 +40,8 @@ export const Create = styled.form`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
-    width: 650px;
-    max-width: 100%;
-    overflow: hidden;
+
+    width: 80%;
 `;
 
 export const CreateTodo = styled.input`
@@ -66,7 +62,7 @@ export const CreateButton = styled.button`
     border: none;
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
-    
+
     background-color: ${props => props.theme.colors.createButton};
 `;
 
@@ -81,15 +77,12 @@ export const TodosList = styled.div`
     flex-direction: column;
 
     align-items: center;
-    justify-content: center;
 
     width: 100%;
 
-    padding-top: 130px;
-
     overflow-y: scroll;
 
-    ::-webkit-scrollbar {
+    &::-webkit-scrollbar {
      width: 7px;
     }
 
@@ -97,7 +90,6 @@ export const TodosList = styled.div`
      background-color: #F0F0F0;
      border-radius: 5px;
     }
-
 `;
 
 export const Todo = styled.div`
@@ -111,16 +103,15 @@ export const Todo = styled.div`
     height: 40px;
     
     margin-top: 5px;
-
     padding: 10px;
 
     border: 1px solid #000;
+    
 `;
 
 export const TodoText = styled.p`
     font-size: 20px;
     font-weight: bold;
-    
 `;
 
 export const Buttons = styled.div`

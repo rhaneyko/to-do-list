@@ -21,7 +21,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Como executar o projeto
 
-Esse projeto foi elaborado para web.
+Esse projeto foi elaborado para web e mobile.
 Para acessar basta clicar no link abaixo:
 
 https://todolistlivesite.netlify.app/
