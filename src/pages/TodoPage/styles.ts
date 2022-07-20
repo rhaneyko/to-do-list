@@ -31,7 +31,7 @@ export const TodoContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-     margin: 10px;
+    margin: 10px;
 `;
 
 export const Create = styled.form`
@@ -39,10 +39,14 @@ export const Create = styled.form`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
+    width: 650px;
+    max-width: 100%;
+    overflow: hidden;
 `;
 
 export const CreateTodo = styled.input`
-    width: 450px;
+    width: 100%;
     height: 55px;
 
     padding-left: 20px;

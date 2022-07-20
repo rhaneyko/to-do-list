@@ -52,7 +52,6 @@ const TodoPage = () => {
 
   function deleteTodo(id: number) {
     const todoDelete = todos.filter((todo) => todo.id !== id);
-
     setTodos(todoDelete);
   }
 
